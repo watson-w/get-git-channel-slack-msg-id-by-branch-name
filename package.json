@@ -1,0 +1,32 @@
+{
+  "name": "get-git-channel-slack-msg-id-by-branch-name",
+  "version": "1.0.0",
+  "description": "Github action for querying a `#git` slack channel for the most recent non-reply message returned using the value of `github.ref` as the predicate.",
+  "private": true,
+  "scripts": {
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/watson-w/get-git-channel-slack-msg-id-by-branch-name.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/watson-w/get-git-channel-slack-msg-id-by-branch-name/issues"
+  },
+  "homepage": "https://github.com/watson-w/get-git-channel-slack-msg-id-by-branch-name#readme",
+  "dependencies": {
+    "@actions/core": "^1.4.0",
+    "@actions/github": "^5.0.0",
+    "@slack/types": "^2.1.0",
+    "@slack/web-api": "^6.2.4"
+  },
+  "devDependencies": {
+    "@types/node": "^15.12.2",
+    "@webpack-cli/generators": "^2.2.0",
+    "webpack": "^5.41.1",
+    "webpack-cli": "^4.7.2"
+  }
+}

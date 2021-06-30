@@ -1,0 +1,18 @@
+name: 'Fetch messageId'
+description: 'Fetch messageId by github.ref'
+inputs:
+  token:
+    description: 'Auth token for Slack'
+    required: true
+  
+  chanel:
+    description: 'Auth token for Slack'
+    required: true
+
+outputs:
+  message_id:
+    description: 'The unique timestamp identifier of the oldest Slack message with text `CICD Alerts for ${github.context.ref}``'
+
+runs:
+  using: 'node12'
+  main: 'dist/index.js'
